@@ -13,7 +13,7 @@ exports.createPages = ({ graphql, actions }) => {
   return graphql(`
     query {
       pokedex {
-        pokemons(first: 1000) {
+        pokemons(first: 5) {
           name, id, image, types, evolutions {
             name
           }

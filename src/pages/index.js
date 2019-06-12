@@ -29,8 +29,8 @@ const IndexPage = ({data}) => (
 export const query = graphql`
   query {
     pokedex {
-      pokemons(first: 1000) {
-        name, id, image
+      pokemons(first: 5) {
+        name, id, image, localImage
       }
     }
   }
